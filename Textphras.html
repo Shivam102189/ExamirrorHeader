@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .Text {
+            color: black;
+            text-align: left;
+            font-size: 25px;
+            background-color: yellow;
+            padding: 1px 20px 1px 20px; /* Added padding for better spacing */
+        }
+
+        /* Next div for phras */
+        .phras {
+            text-align: center;
+            font-size: 30px;
+            border: 2px solid black;
+            margin: 0 auto; /* Center the div
+             horizontally */
+             margin-top: 10px;
+            max-width: 50%; /* Set a maximum width for the div */
+            background-color: orangered;
+            color: blue;
+            border-radius: 10px;
+            font-family: sans-serif;
+            padding: 2px; /* Added padding for better spacing */
+            line-height: 1;
+        }
+
+        /* Media query for screens smaller than 768px */
+        @media (max-width: 768px) {
+            .Text {
+                font-size: 12px; /* Adjust font size for smaller screens */
+                padding: 1px 10px 1px 10px;
+
+            }
+            .phras {
+                font-size: 15px; /* Adjust font size for smaller screens */
+                line-height: 1.5;
+                max-width: 80%;
+                
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="Text">
+        <p><strong>EXAMIRROR</strong> is an academically structured institution complete in all aspects. Our motto is to provide high-quality education and an inspiring environment to students who aspire to pursue higher studies.</p>
+    </div>
+    <div class="phras">
+        <p><strong>“Empowering minds, shaping lives."</strong></p>
+    </div>
+</body>
+</html>
