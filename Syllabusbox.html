@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+    .AllSubject {
+        background-color: rgb(255, 165, 165);
+        padding: 20px;
+    }
+
+    .SubjectCovered {
+        text-align: center;
+        font-size: 25px;
+        margin-bottom: 20px;
+        text-decoration: underline;
+    }
+
+    .CUET-UGCUET-PG {
+        display: flex;
+        justify-content: center;
+    }
+
+    .UGPG {
+        border: 2px solid black;
+        text-align: center;
+        width: 50%;
+       
+        margin: 15px;
+        padding: 20px;
+        box-sizing: border-box;
+        border-radius: 20px;
+        background-color: gainsboro;
+    }
+
+    .UGPG label {
+        font-size: 25px;
+        margin-bottom: 10px;
+    }
+
+    .PartSection {
+        display: flex;
+        justify-content: center;
+    }
+
+    .Section {
+        width: 40%;
+        height:fit-content;
+        box-sizing: border-box;
+        margin: 20px 10px 0px 10px;
+        
+        display: grid; /* Use grid to make inner boxes equal height */
+        grid-template-rows: repeat(auto-fill, minmax(100px, 1fr)); /* Equal height rows */
+    }
+
+    .Section-A {
+        background-color: gainsboro;
+        text-align: center;
+        border: 2px solid black;
+        border-radius: 20px;
+        height: 400px;
+        padding: 10px;
+       
+    }
+
+    .Section-B {
+        height: 400px;
+        background-color: gainsboro;
+        text-align: center;
+        border: 2px solid black;
+        border-radius: 20px;
+        padding: 10px;
+       
+    }
+    .CUET-UG{
+        font-weight: bold;
+    }
+    .CUET-PG{
+        font-weight: bold;
+    }
+
+    @media (max-width: 768px) {
+            .UGPG {
+                width: 90%;
+            }
+
+            .Section {
+                width: 90%;
+            }
+
+            .Section-A, .Section-B {
+                height: auto;
+            }
+            .Section {
+                width: 50%;
+                height:fit-content;
+                box-sizing: border-box;
+                margin: 10px 5px 0px 5px;
+                
+                display: grid; /* Use grid to make inner boxes equal height */
+                grid-template-rows: repeat(auto-fill, minmax(100px, 1fr)); /* Equal height rows */
+    }
+
+        }
+
+        @media (max-width: 576px) {
+            .UGPG {
+                flex-direction: column;
+            }
+
+            .UGPG label {
+                font-size: 20px;
+            }
+
+            .Section {
+                width: 90%;
+                margin: 5px 0;
+            }
+
+            .Section-A, .Section-B {
+                height: auto;
+            }
+            .CUET-UGCUET-PG{
+                display: block;
+            }
+            .SubjectCovered{
+                font-size: 20px;
+            }
+        }
+
+
+
+</style>
+<title>CSS Example</title>
+</head>
+<body>
+    <div class="AllSubject">
+        <div class="SubjectCovered"><h2>SUBJECT COVERED</h2></div>
+        <div class="CUET-UGCUET-PG">
+            <div class="UGPG">
+                <label class="CUET-UG">CUET-UG 2024</label>
+                <div class="PartSection">
+                    <div class="Section">
+                        <label>Section-A</label>
+                        <div class="Section-A">
+                            <p>English</p>
+                            <p>Hindi</p>
+                        </div>
+                    </div>
+                    <div class="Section">
+                        <label>Section-B</label>
+                        <div class="Section-B">
+                            <p>Mathematics</p>
+                            <p>Physics</p>
+                            <p>Chemistry</p>
+                            <p>Biology</p>
+                            <p>Biotechnology</p>
+                            <p>Biochemistry</p>
+                            <p> History</p>
+                            <p>Geography</p>
+                            <p> P Science</p>
+                            <p>Agriculture</p>
+                            <p>Tech Aptitude</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="UGPG">
+                <label class="CUET-PG">CUET-PG 2024</label>
+                <div class="PartSection">
+                    <div class="Section">
+                        <label>Section-A</label>
+                        <div class="Section-A">
+                            <p>General Test</p>
+                        </div>
+                    </div>
+                    <div class="Section">
+                        <label>Section-B</label>
+                        <div class="Section-B">
+                            <p>Computer Science</p>
+                            <p> Data Science</p>
+                            <p> Mathematics</p>
+                            <p>Geography</p>
+                            <p>P Science</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
