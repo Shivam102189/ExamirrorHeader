@@ -1,0 +1,103 @@
+body, ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Style the menu bar */
+.menu-bar {
+    background-color: #333;
+    padding: 20px;
+    
+}
+
+/* Style the main menu list */
+.menuclor {
+    display: flex;
+    justify-content:right ;
+    font-size:22px;
+    padding: 15px 0;
+    margin-right: 10px;
+    
+}
+
+.menuclor li {
+    position: relative;
+    
+}
+
+.menuclor li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+}
+
+.menuclor li:hover > a {
+    background-color: #555;
+}
+
+
+.sub-menu-1 {
+    padding-top: 18px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333;
+    display: none;
+}
+
+.menuclor li:hover .sub-menu-1 {
+    display: block;
+}
+
+.sub-menu-1 ul {
+    width: 200px;
+}
+
+.sub-menu-1 li {
+    position: relative;
+}
+
+.sub-menu-1 li a {
+    padding: 10px 15px;
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+.sub-menu-1 li:hover > a {
+    background-color: #555;
+}
+@media (max-width: 576px) {
+
+    .menu-bar {   
+        padding: 10px; 
+    }
+    .menuclor {  
+        font-size:12px;
+        padding: 7px 0;
+        margin-right: 5px; 
+    }
+    .menuclor li a {
+       
+        padding: 5px 7.5px;
+        
+    }
+    .sub-menu-1 {
+        padding-top: 9px;
+       
+    }
+    .sub-menu-1 ul {
+        width: 100px;
+    }
+    .sub-menu-1 li a {
+        padding: 5px 7.5px;
+        color: white;
+        text-decoration: none;
+        display: block;
+    }
+    
+    
+
+}
