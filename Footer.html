@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Resetting default margin and padding for all elements */
+body, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Styling the footer */
+footer {
+    background-color: #7a2626; /* Background color for the footer */
+    color: #fff; /* Text color for the footer */
+    padding: 20px; /* Padding around the footer content */
+}
+
+/* Styling the footer container */
+.footer {
+    background-color: aqua;
+    display: flex; /* Display child elements in a row */
+    justify-content: space-between; /* Space out child elements horizontally */
+    
+    margin: 0 auto; /* Center the container horizontally */
+}
+
+/* Styling the ABOUT US section */
+.ABOUTUS {
+   
+    width: 25%;
+  
+    padding: 10px; /* Padding inside the section */
+}
+
+.ABOUTUS .AboutUsHeading h3 {
+    text-align: center;
+    background-color: rgb(124, 124, 124);
+    font-size: 20px; /* Font size for the section heading */
+}
+
+.ABOUTUS .reference {
+    padding: 5px 15px;
+    background-color:rgb(124, 124, 124) ;
+    margin-top: 10px; /* Spacing between the heading and links */
+}
+
+.ABOUTUS .reference a {
+    display: block; /* Display links as block elements */
+    color: #fff; /* Link text color */
+    text-decoration: none; /* Remove underlines from links */
+    margin-bottom: 5px; /* Spacing between links */
+}
+
+/* Styling the IMPORTANT LINKS section */
+.IMPORTANTLINKS {
+    
+    width: 25%;
+   
+    padding: 10px; /* Padding inside the section */
+}
+
+.IMPORTANTLINKS h3 {
+    text-align: center;
+    background-color: rgb(124, 124, 124);
+    font-size: 20px; /* Font size for the section heading */
+}
+
+.IMPORTANTLINKS .links {
+    padding: 5px 15px;
+    background-color:rgb(124, 124, 124) ;
+    margin-top: 10px; /* Spacing between the heading and links */
+}
+
+.IMPORTANTLINKS .links a {
+    display: block; /* Display links as block elements */
+    color: #fff; /* Link text color */
+    text-decoration: none; /* Remove underlines from links */
+    margin-bottom: 5px; /* Spacing between links */
+}
+
+/* Styling the CONTACT US section */
+.CONTACTUS {
+    width: 25%;
+    padding: 10px; /* Padding inside the section */
+}
+
+.CONTACTUS .ContactUsHeading {
+    text-align: center;
+    background-color: rgb(152, 150, 149);
+    font-size: 20px; /* Font size for the section heading */
+    margin-bottom: 10px; /* Spacing between the heading and address */
+}
+
+.CONTACTUS .Address p {
+    background-color:rgb(152, 150, 149) ;
+    padding:5px 15px;;
+    font-size: 14px; /* Font size for the address */
+    line-height: 1.5; /* Line height for address text */
+}
+
+/* Styling links on hover (optional) */
+a:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
+@media (max-width: 768px) {
+
+            .ABOUTUS {
+                width: auto;
+                align-items: center;
+            }
+            .IMPORTANTLINKS {
+                width: auto; /* 25% width on medium screens */
+                align-items: center;
+            }
+             
+            .CONTACTUS {
+                width: auto; /* 25% width on medium screens */
+                align-items: center;
+            }
+            .footer{
+                
+                display: block;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <footer>
+        <div class="footer">
+            <div class="ABOUTUS">
+               <div class="AboutUsHeading"><h3>ABOUT US</h3></div>
+               <div class="reference">
+                    <a href="#">Our Faculty</a>
+                    <a href="#">Examirror toppers</a>
+                    <a href="#">Recruitments</a>
+                    <a href="#">Feedback</a>
+                    <a href="#">Terms & Conditions</a>
+                    </div>
+            </div>
+
+            <div class="IMPORTANTLINKS">
+                <div><h3>IMPORTANT LINKS</h3></div>
+                <div class="links">
+                    <a href="#">CUET-UG 2024</a>
+                    <a href="#">CUET-PG 2024</a>
+                    <a href="#">NIMCET 2024</a>
+                    <a href="#">CTET December 2023</a>
+                    <a href="#">NET December 2023</a>
+                </div>
+            </div>
+           
+            <div class="CONTACTUS">
+                <div class="ContactUsHeading">CONTACT US</div>
+                <div class="Address">
+                    <p>examirror
+                    Regd Office : Near K14, Chitraguptanagar, Kankarbagh, Patna, Bihar (800020)
+                    Mobile no: 9507950788
+                    Email : examirror1@gmailcom
+                    </p>
+                </div>
+            </div>    
+        </div>
+    </footer>
+</body>
+</html>
