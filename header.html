@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examirror.com</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            background-color: #3498db;
+            color: white;
+            padding: 10px;
+        }
+
+        .logoHeading {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .logo img {
+            width: 100px;
+            height: 100px;
+            margin-right: 10px;
+        }
+
+        .textheading {
+            flex: 1;
+            line-height: .8;
+            margin-left: 20px;
+        }
+
+        .heading {
+            font-size: 50px;
+            margin: 0;
+        }
+
+        .botomHeading {
+            font-size: 25px;
+            margin: 0;
+            line-height: 1.2;
+        }
+
+        .LoginLogo {
+            line-height: .3;
+            align-items: center;
+            margin-top: 10px;
+        }
+
+        .LoginLogo img {
+            width: 40px;
+            height: 40px;
+            margin-right: 5px;
+        }
+
+        .LoginLogo a {
+            text-decoration: none;
+            color: white;
+            font-size: 15px;
+        }
+
+        /* Add media query for screens with a max width of 768px */
+        @media (max-width: 768px) {
+            .logo img {
+                margin-right: 5px;
+                width: 60px;
+                height: 60px;
+            }
+
+            .textheading {
+                margin-left: 5px;
+            }
+
+            .heading {
+                font-size: 20px;
+            }
+
+            .botomHeading {
+                font-size: 12px;
+            }
+
+            .LoginLogo img {
+                width: 20px;
+                height: 20px;
+                margin-right: 2px;
+            }
+
+            .LoginLogo a {
+                font-size: 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logoHeading">
+            <div class="logo">
+                <img src="logopng.png">
+            </div>
+            <div class="textheading">
+                <h1 class="heading">EXAMIRROR</h1><br>
+                <p class="botomHeading">Prime Institute for CUET-UG/PG, NIMCET, TGT/PGT & CTET</p>
+            </div>
+            <div class="LoginLogo">
+                <a href="login.html"><img src="LoginLogo.png"></a>
+                <a href=""><p>Login</p></a>
+            </div>
+        </div>
+    </header>
+</body>
+</html>
